@@ -20,8 +20,10 @@
     }
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "nuxt": "^2.13.0"
+    "nuxt": "^2.13.0",
+    "nuxt-fontawesome": "^0.4.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.0.0",

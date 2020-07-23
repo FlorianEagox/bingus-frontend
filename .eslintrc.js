@@ -16,6 +16,7 @@ module.exports = {
 	// add your custom rules here
 	rules: {
 		'vue/html-indent': [1, 'tab'],
+		'vue/singleline-html-element-content-newline': 0,
 		indent: [1, 'tab'],
 		allowIndentationTabs: 0,
 		'no-tabs': 0,
@@ -26,4 +27,4 @@ module.exports = {
 		eqeqeq: 0,
 		'arrow-parens': 0
 	}
-}
+};

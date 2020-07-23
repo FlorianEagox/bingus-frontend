@@ -51,7 +51,15 @@ export default {
 	** Nuxt.js modules
 	*/
 	modules: [
-		'@nuxtjs/pwa'
+		'@nuxtjs/pwa',
+		['nuxt-fontawesome', {
+			imports: [
+				{
+					set: '@fortawesome/free-solid-svg-icons',
+					icons: ['fas']
+				}
+			]
+		}]
 	],
 	/*
 	** Build configuration
