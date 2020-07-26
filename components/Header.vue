@@ -50,7 +50,7 @@ header .container {
 	width: 0%;
 	position: absolute;
 	overflow-x: hidden;
-	transition: 0.3s;
+	transition: 0.25s;
 }
 .logo:hover::after {
 	transition: 0.5s;
@@ -80,6 +80,7 @@ a:hover,
 a.selected {
 	border-bottom: 3px solid yellow;
 }
+
 #btns {
 	margin-left: auto;
 }

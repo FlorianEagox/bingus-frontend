@@ -17,7 +17,7 @@
 				<li><a href="https://sethpainter.com">Seth Painter</a></li>
 			</ul>
 			<ul>
-				<li><a href="">Rachel _____</a></li>
+				<li><a href="http://rkooi.com">Rachel Ooi</a></li>
 			</ul>
 			<ul>
 				<li><a href="https://gabefrances.com">Gabe Frances</a></li>
