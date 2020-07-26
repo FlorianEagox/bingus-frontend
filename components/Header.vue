@@ -2,7 +2,7 @@
 	<header>
 		<div class="container">
 			<div class="logo">
-				b <span class="accented">!</span>
+				b<span class="accented">!</span>
 			</div>
 			<nav>
 				<ul>
@@ -43,11 +43,26 @@ header .container {
 	flex-direction: row;
 }
 .logo {
-	padding: 0.2 0;
 	font-size: 2em;
+}
+.logo:after {
+	content: "ngus";
+	width: 0%;
+	position: absolute;
+	overflow-x: hidden;
+	transition: 0.3s;
+}
+.logo:hover::after {
+	transition: 0.5s;
+	width: 100%;
+}
+.logo:hover + nav {
+	margin-left: 5em;
+	transition: 0.25s;
 }
 nav {
 	margin-left: 1em;
+	transition: 0.5s;
 }
 ul {
 	list-style-type: none;
