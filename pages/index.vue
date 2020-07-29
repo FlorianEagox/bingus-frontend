@@ -79,7 +79,6 @@ button:hover {
 
 #page {
 	width: 100%;
-	height: 100%;
 	margin: auto;
 	display: flex;
 	flex-direction: column;
@@ -117,7 +116,7 @@ button:hover {
 	align-items: center;
 }
 #short-about {
-	max-width: 400px;
+	max-width: 420px;
 	line-height: 1.6;
 	display: flex;
 	flex-direction: column;
@@ -142,6 +141,7 @@ button:hover {
 	width: 55%;
 	max-width: 1000px;
 	margin: auto;
+	margin-top: auto;
 	background: #111;
 	padding: 1em;
 }
@@ -172,14 +172,44 @@ button:hover {
 	width: 100%;
 	display: flex;
 	text-align: center;
+	background: #222;
 }
 .descriptor {
-	flex-basis: 33%;
+	flex-basis: calc(100% / 3);
 	padding: 4em;
-	background: #222;
+	padding-bottom: 2em;
 }
 .descriptor p {
 	margin: auto;
 	max-width: 300px;
+}
+@media (max-width: 950px) {
+	#page {
+		text-align: center;
+	}
+	#page-greeter {
+		flex-direction: column;
+		align-items: center;
+	}
+	#short-about {
+		margin-top: 1em;
+		font-size: 1.29em;
+	}
+	#short-about #heading {
+		/* width: 100%; */
+	}
+	#btn-learn {
+		margin: auto;
+		margin-top: 1em;
+	}
+	#descriptors {
+		flex-direction: column;
+	}
+	#reasons {
+		width: 95%;
+	}
+	.descriptor {
+		padding-top: 3em;
+	}
 }
 </style>

@@ -1,18 +1,9 @@
-export default {
-	/*
-	** Nuxt rendering mode
-	** See https://nuxtjs.org/api/configuration-mode
-	*/
+// eslint-disable-next-line nuxt/no-cjs-in-config
+module.exports = {
 	mode: 'universal',
-	/*
-	** Nuxt target
-	** See https://nuxtjs.org/api/configuration-target
-	*/
 	target: 'server',
-	/*
-	** Headers of the page
-	** See https://nuxtjs.org/api/configuration-head
-	*/
+	components: true,
+	telemetry: false,
 	head: {
 		title: process.env.npm_package_name || '',
 		meta: [
@@ -24,9 +15,6 @@ export default {
 			{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
 		]
 	},
-	/*
-	** Global CSS
-	*/
 	css: [
 	],
 	/*
@@ -36,22 +24,17 @@ export default {
 	plugins: [
 	],
 	/*
-	** Auto import components
-	** See https://nuxtjs.org/api/configuration-components
-	*/
-	components: true,
-	/*
 	** Nuxt.js dev-modules
 	*/
 	buildModules: [
 		// Doc: https://github.com/nuxt-community/eslint-module
-		// '@nuxtjs/eslint-module'
+		'@nuxtjs/eslint-module'
 	],
 	/*
 	** Nuxt.js modules
 	*/
 	modules: [
-		'@nuxtjs/pwa',
+		// '@nuxtjs/pwa',
 		['nuxt-fontawesome', {
 			imports: [
 				{
@@ -61,13 +44,10 @@ export default {
 			]
 		}]
 	],
-	/*
-	** Build configuration
-	** See https://nuxtjs.org/api/configuration-build/
-	*/
-	build: {
+
+	generate: {
+		dir: '../server/public/'
 	},
-	telemetry: false,
 	server: {
 		host: 'gabefrances.com',
 		port: 6969

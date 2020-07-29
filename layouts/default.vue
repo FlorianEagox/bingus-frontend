@@ -12,7 +12,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 export default {
-	components: [Header, Footer]
+	components: { Header, Footer }
 };
 </script>
 
@@ -34,23 +34,24 @@ html,
 body,
 #app {
 	background: var(--background-color);
-	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 	color: var(--text-color);
 	height: 100vh;
-}
-.container {
-	margin: auto;
-	/* overflow: hidden; */
-	width: 80%;
 }
 #app {
 	display: flex;
 	flex-direction: column;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 #main {
 	flex: 1 0 auto;
+	width: 100%;
 }
 footer {
 	margin-top: auto;
+}
+.container {
+	margin: auto;
+	overflow: hidden;
+	width: 80%;
 }
 </style>
